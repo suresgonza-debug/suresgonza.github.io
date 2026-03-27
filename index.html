@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Retos aleatorios</title>
+</head>
+<body style="text-align:center; font-family:sans-serif;">
+
+<h1>🔥 Generador de Retos 🔥</h1>
+
+<button onclick="generarReto()">Dame un reto</button>
+
+<p id="resultado"></p>
+
+<script>
+let retos = [
+  "Haz 10 flexiones",
+  "Canta una canción",
+  "Manda un mensaje raro",
+  "Baila durante 10 segundos",
+  "Di algo gracioso"
+];
+
+function generarReto() {
+  let random = Math.floor(Math.random() * retos.length);
+  document.getElementById("resultado").innerText = retos[random];
+}
+</script>
+
+</body>
+</html>
